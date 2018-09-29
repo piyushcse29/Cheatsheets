@@ -1,0 +1,38 @@
+sudo su
+nvidia-smi
+jupyter notebook
+
+http://jupyter-notebook.readthedocs.io/en/stable/public_server.html
+
+scp -r /Users/piyushmittal/Desktop/Archive.zip erish@192.168.1.48:/home/erish/Documents/MachineLearning/CNN/
+
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+sudo dpkg-reconfigure locales
+
+http://www.nvidia.com/content/DriverDownload-March2009/confirmation.php?url=/XFree86/Linux-x86_64/390.59/NVIDIA-Linux-x86_64-390.59.run&lang=us&type=TITAN
+source activate tensorflow
+
+
+https://github.com/williamFalcon/tensorflow-gpu-install-ubuntu-16.04
+sudo fuser -v /dev/nvidia*
+
+conda info --envs
+conda env list
+
+Closing ubuntu
+
+sudo reboot
+sudo halt
+sudo poweroff
+
+
+export PYTHONPATH="${PYTHONPATH}:/home/erish/anaconda3/envs/tensorflow/models://home/erish/anaconda3/envs/tensorflow/models/research/slim/"
+
+export PYTHONPATH=$PYTHONPATH:/home/erish/Documents/git/extras/Object-Detection:/home/erish/Documents/git/extras/Object-Detection/slim
+
+export PYTHONPATH=$PYTHONPATH:/home/erish/Documents/git/extras/Object-Detection/models:/home/erish/Documents/git/extras/Object-Detection/models/slim
+
+
+Wake on LAN
+wakeonlan -i  <PubIP> -p 8888 <MAC>

@@ -1,0 +1,8 @@
+
+> SSH Increase timeout
+
+~/.ssh/config
+
+Host *
+  ServerAliveInterval 120
+
