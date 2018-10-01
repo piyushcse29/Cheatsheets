@@ -1,0 +1,66 @@
+git status
+git ls-files
+
+#Express Commit
+git commit -am "update with commit"
+
+#Backing out changes
+git reset HEAD <File_name>
+git checkout -- <File_name>
+
+#History
+git log --online --graph --decorate --all
+
+#Making alias
+git config --global alias.hist "log --online --graph --decorate --all
+
+#List aliases
+git config --global --list
+
+#Renaming and deleting
+git mv <oldfile> <newfile>
+git rm <filename>
+
+#Managing files outside of git
+git add -u
+git add -A
+
+#Excluding unwanted files
+vim .gitignore
+
+#Comparing differences
+git diff
+git difftool
+
+#Branching and merging
+  Types of merge
+   -> Fast Forward
+       * Simplest case
+       * Like never Branched (commits on destination)
+       * Can be disabled
+   -> Automatic
+       * Non conflicting merge detected
+       * Preserves both timelines
+       * Merge commit on destination
+   -> Manual merge
+       * Automatic merge not possible
+       * Conflicting merge state
+       * Changes saved in merge commit
+
+#Special Markers
+    -> Like pointers
+    -> HEAD
+       * Points to last commit of current branch
+       * Can be moved (Advanced)
+
+#Simple Branch Example
+git branch
+git checkout -b updates
+git diff master updates
+ -> To switch branch 
+   git checkout master
+git merge updates
+git branch -d updates # To delete after merge
+
+
+
