@@ -6,3 +6,11 @@
 Host *
   ServerAliveInterval 120
 
+> Processes
+ps -e
+ps -ef
+ps -a
+  
+
+
+
