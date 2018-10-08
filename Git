@@ -62,5 +62,52 @@ git diff master updates
 git merge updates
 git branch -d updates # To delete after merge
 
+#Marking special events and tagging
+git tag <mytag>
+git tag --list
+git tag -d <mytag> #deleting the tag 
+ #Annotated tag
+   git tag -a v1.0 -m "message" 
+
+#Saving work in progress in stashing
+git stash <name>
+
+#Time travel with reset and reflog
+git reset <commitId> --soft
+git reset <commitId> --mixed 
+git reset <commitId> --hard
+
+git log --online
+git reflog 
+   git tag 
+
+#Create a local copy with clone
+git clone <url>
+git clone <url> <new local name>
+git config --global push.default simple #To get short summary
+
+#Fetch and Pull
+git fetch #Non destructive and just show the difference between repo and updte this info at local.
+
+#Updating repository and remote refrences
+git remote -v #list the difference
+git remote set-url origin <new url>
+git remote show origin # shows remote origin branch
+
+#Using commit ids with local repository
+git show <commit_id>
+
+#Create local branch
+git checkout -b <branch name>
+git push -u origin <branchname>
+
+#Merge branch locally
+git merge <branchname>
+
+#Delete branch locally if it is already deleted on github
+git fetch -p
+
+
+
 
 
